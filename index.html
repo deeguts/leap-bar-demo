@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Leap Bar Demo</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="nav-left">leap</div>
+  </nav>
+
+  <!-- MAIN -->
+  <main class="main">
+
+    <h1 class="range-text">
+      Leap Bar Score: <span id="rangeValue">6 – 7</span>
+    </h1>
+
+    <!-- LEAP BAR -->
+    <div class="bar-wrapper">
+      <div class="bar-track">
+        <div id="barFill" class="bar-fill dull"></div>
+      </div>
+
+      <!-- SCALE -->
+      <div class="scale">
+        <span>0</span>
+        <span>4</span>
+        <span>7</span>
+        <span>9</span>
+      </div>
+    </div>
+
+    <p id="barStatus" class="status dull-text">
+      Momentum has slowed due to inactivity
+    </p>
+
+    <button id="startChallenge">
+      Regain Momentum (Quick Challenge)
+    </button>
+
+    <!-- CHALLENGE -->
+    <section id="challenge" class="hidden">
+      <h2>Quick Practice</h2>
+
+      <div class="question">
+        <p>1. Choose the correct sentence:</p>
+        <label><input type="radio" name="q1" /> He did a mistake</label>
+        <label><input type="radio" name="q1" /> He made a mistake</label>
+      </div>
+
+      <div class="question">
+        <p>2. Synonym of “significant”:</p>
+        <label><input type="radio" name="q2" /> trivial</label>
+        <label><input type="radio" name="q2" /> important</label>
+      </div>
+
+      <div class="question">
+        <p>3. Fill the blank:</p>
+        <label><input type="radio" name="q3" /> She has been studying since morning</label>
+        <label><input type="radio" name="q3" /> She is studying since morning</label>
+      </div>
+
+      <button id="submitChallenge">Submit</button>
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
